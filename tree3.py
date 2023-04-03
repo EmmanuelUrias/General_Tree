@@ -36,6 +36,7 @@ def build_tree():
     karnataka.add_child(TreeNode('Bangluru'))
     karnataka.add_child(TreeNode('Mysore'))
 
+    # India hierarchy
     india = TreeNode('India')
     india.add_child(gujarat)
     india.add_child(karnataka)
@@ -49,10 +50,12 @@ def build_tree():
     california.add_child(TreeNode('Mountain View'))
     california.add_child(TreeNode('Palo Alto'))
 
+    # USA hierarchy
     usa = TreeNode('USA')
     usa.add_child(new_jersey)
     usa.add_child(california)
 
+    # Global hierarchy
     world = TreeNode('Global')
     world.add_child(india)
     world.add_child(usa)
